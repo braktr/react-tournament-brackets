@@ -33,8 +33,18 @@ function Match({
         {(match.href || typeof onMatchClick === 'function') && (
           <Anchor
             href={match.href}
-            onClick={event =>
-              onMatchClick?.({ match, topWon, bottomWon, event })
+            onClick={event => {
+              event.stopPropagation();
+              onMatchClick?.({ match, topWon, bottomWon, event });
+            }}
+            onTouchStart={event =>
+              event.stopPropagation()
+            }
+            onTouchMove={event =>
+              event.stopPropagation()
+            }
+            onTouchEnd={event =>
+              event.stopPropagation()
             }
           >
             <TopText>Match Details</TopText>
