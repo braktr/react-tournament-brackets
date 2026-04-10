@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { matchContext } from './match-context';
 import { MATCH_STATES } from './match-states';
 import { defaultStyle, getCalculatedStyles } from '../settings';

@@ -1,4 +1,3 @@
-import React from 'react';
 import Connector from 'Components/connector';
 import { getCalculatedStyles } from '../settings';
 import { calculatePositionOfFinalGame } from './calculate-match-position';

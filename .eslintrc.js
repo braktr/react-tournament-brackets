@@ -66,6 +66,7 @@ module.exports = {
         allow: ['warn', 'error', 'info', 'table'],
       },
     ],
+    'no-bitwise': ['off'],
     'prettier/prettier': ['error', prettier],
     'react/prop-types': ['off'],
     'react/state-in-constructor': ['off'],
@@ -73,6 +74,13 @@ module.exports = {
     'react/destructuring-assignment': ['off'],
     'react/no-access-state-in-setstate': ['off'],
     'react/sort-comp': ['off'],
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function' | 'function-expression',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     'import/no-cycle': ['off'],
     'import/prefer-default-export': ['off'],
     'jsx-a11y/no-static-element-interactions': ['off'],

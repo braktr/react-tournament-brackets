@@ -1,4 +1,3 @@
-import React from 'react';
 import MatchWrapper from 'Core/match-wrapper';
 import { getPreviousMatches } from 'Core/match-functions';
 import { calculatePositionOfMatchUpperBracket } from './calculate-match-position';

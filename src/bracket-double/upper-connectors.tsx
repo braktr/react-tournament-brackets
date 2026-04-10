@@ -1,4 +1,3 @@
-import React from 'react';
 import Connectors from 'Components/connector';
 
 import { getCalculatedStyles } from '../settings';

@@ -1,4 +1,3 @@
-import React from 'react';
 import RoundHeader from 'Components/round-header';
 import { ComputedOptionsType } from '../types';
 import { calculatePositionOfMatchLowerBracket } from './calculate-match-position';

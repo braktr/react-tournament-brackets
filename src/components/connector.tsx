@@ -1,5 +1,4 @@
 import useMatchHighlightContext from 'Hooks/use-match-highlight';
-import React from 'react';
 import { getCalculatedStyles } from '../settings';
 
 const Connector = ({

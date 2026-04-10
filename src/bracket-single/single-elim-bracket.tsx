@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { sortAlphanumerically } from 'Utils/string';
 import { calculateSVGDimensions } from 'Core/calculate-svg-dimensions';

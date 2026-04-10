@@ -1,4 +1,3 @@
-import React from 'react';
 import MatchWrapper from 'Core/match-wrapper';
 import { calculatePositionOfFinalGame } from './calculate-match-position';
 import Connectors from './final-connectors';
@@ -13,7 +12,6 @@ const FinalGame = ({
   onMatchClick,
   onPartyClick,
   matchComponent,
-
   bracketSnippet,
   numOfUpperRounds,
   numOfLowerRounds,

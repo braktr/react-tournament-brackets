@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { generatePreviousRound } from 'Core/match-functions';
 import { calculateSVGDimensions } from 'Core/calculate-svg-dimensions';

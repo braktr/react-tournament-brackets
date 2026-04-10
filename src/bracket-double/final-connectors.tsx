@@ -1,4 +1,3 @@
-import React from 'react';
 import Connector from 'Components/connector';
 import { getCalculatedStyles } from '../settings';
 import {
@@ -10,7 +9,6 @@ import {
 const FinalConnectors = ({
   rowIndex,
   columnIndex,
-
   style,
   bracketSnippet = null,
   offsetY = 0,
