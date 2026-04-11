@@ -9,7 +9,6 @@ const ExtraFinal = ({
   gameHeight,
   gameWidth,
   calculatedStyles,
-  onMatchClick,
   onPartyClick,
   matchComponent,
   bracketSnippet,
@@ -63,7 +62,6 @@ const ExtraFinal = ({
           topText={match.startTime}
           bottomText={match.name}
           teams={match.participants}
-          onMatchClick={onMatchClick}
           onPartyClick={onPartyClick}
           style={calculatedStyles}
           matchComponent={matchComponent}

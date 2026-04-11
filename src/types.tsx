@@ -22,6 +22,13 @@ export type MatchType = {
       better supports opening a new tab, or copying a link. * */
   href?: string;
 
+  onMatchClick?: (args: {
+    match: MatchType;
+    topWon: boolean;
+    bottomWon: boolean;
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>;
+  }) => void;
+
   name?: string;
 
   nextMatchId: number | string | null;
@@ -106,13 +113,6 @@ export type SvgViewerProps = {
 
 export type MatchComponentProps = {
   match: MatchType;
-
-  onMatchClick: (args: {
-    match: MatchType;
-    topWon: boolean;
-    bottomWon: boolean;
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>;
-  }) => void;
 
   onPartyClick: (party: ParticipantType, partyWon: boolean) => void;
 

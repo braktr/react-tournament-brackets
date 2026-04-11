@@ -8,7 +8,6 @@ const LowerBracket = ({
   calculatedStyles,
   gameHeight,
   gameWidth,
-  onMatchClick,
   onPartyClick,
   matchComponent,
   upperBracketHeight,
@@ -72,7 +71,6 @@ const LowerBracket = ({
               topText={match.startTime}
               bottomText={match.name}
               teams={match.participants}
-              onMatchClick={onMatchClick}
               onPartyClick={onPartyClick}
               style={calculatedStyles}
               matchComponent={matchComponent}

@@ -17,7 +17,6 @@ function Match({
   bottomText,
   bottomWon,
   match,
-  onMatchClick,
   onMouseEnter,
   onMouseLeave,
   onPartyClick,
@@ -30,12 +29,12 @@ function Match({
     <Wrapper>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <TopText>{topText}</TopText>
-        {(match.href || typeof onMatchClick === 'function') && (
+        {(match.href || typeof match.onMatchClick === 'function') && (
           <Anchor
             href={match.href}
             onClick={event => {
               event.stopPropagation();
-              onMatchClick?.({ match, topWon, bottomWon, event });
+              match.onMatchClick?.({ match, topWon, bottomWon, event });
             }}
             onTouchStart={event =>
               event.stopPropagation()

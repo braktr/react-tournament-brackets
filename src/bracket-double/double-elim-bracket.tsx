@@ -60,7 +60,6 @@ const DoubleEliminationBracket = ({
   matches,
   matchComponent,
   currentRound,
-  onMatchClick,
   onPartyClick,
   svgWrapper: SvgWrapper = ({ children }) => <div>{children}</div>,
   theme = defaultTheme,
@@ -188,7 +187,6 @@ const DoubleEliminationBracket = ({
 
                   gameHeight,
                   gameWidth,
-                  onMatchClick,
                   onPartyClick,
                   matchComponent,
                 }}
@@ -199,7 +197,6 @@ const DoubleEliminationBracket = ({
                   calculatedStyles,
                   gameHeight,
                   gameWidth,
-                  onMatchClick,
                   onPartyClick,
                   matchComponent,
                   upperBracketHeight: upperBracketDimensions.gameHeight,
@@ -224,7 +221,6 @@ const DoubleEliminationBracket = ({
                   gameHeight,
                   gameWidth,
                   matchComponent,
-                  onMatchClick,
                   onPartyClick,
                 }}
               />
@@ -246,7 +242,6 @@ const DoubleEliminationBracket = ({
                     gameHeight,
                     gameWidth,
                     matchComponent,
-                    onMatchClick,
                     onPartyClick,
                   }}
                 />
