@@ -128,7 +128,7 @@ function Match({
               connectorColor,
               computedStyles,
               matchDetailsText: style.matchDetailsText,
-              matchDetailsStyle: style.matchDetailsStyle
+              matchDetailsClassname: style.matchDetailsClassname
             }}
           />
         )}

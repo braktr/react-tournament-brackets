@@ -25,7 +25,7 @@ function Match({
   topText,
   topWon,
   matchDetailsText,
-  matchDetailsStyle
+  matchDetailsClassname
 }: MatchComponentProps) {
 
   return (
@@ -35,7 +35,7 @@ function Match({
         {(match.href || typeof match.onMatchClick === 'function') && (
           <Anchor
             href={match.href}
-            style={matchDetailsStyle}
+            className={matchDetailsClassname}
             aria-label={matchDetailsText}
             onClick={event => {
               event.stopPropagation();

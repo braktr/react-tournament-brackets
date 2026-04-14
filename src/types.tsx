@@ -92,7 +92,7 @@ export type OptionsType = {
   matchDetailsText?: string;
 
   /** Optional inline style for the action link in the default match component. */
-  matchDetailsStyle?: React.CSSProperties;
+  matchDetailsClassname?: string;
 
 };
 
@@ -147,7 +147,7 @@ export type MatchComponentProps = {
   matchDetailsText?: string;
 
   /** Optional inline style for the action link in the default match component. */
-  matchDetailsStyle?: React.CSSProperties;
+  matchDetailsClassname?: string;
 
   connectorColor?: string;
 
