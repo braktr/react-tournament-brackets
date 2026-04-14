@@ -16,7 +16,6 @@ const SingleEliminationBracket = ({
   matches,
   matchComponent,
   currentRound,
-  onMatchClick,
   onPartyClick,
   svgWrapper: SvgWrapper = ({ children }) => <div>{children}</div>,
   theme = defaultTheme,
