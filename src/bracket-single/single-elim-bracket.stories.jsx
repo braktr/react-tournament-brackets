@@ -96,7 +96,6 @@ CustomMatchViewBracket.args = {
   matches: simpleBracket,
   matchComponent: ({
     match,
-    onMatchClick,
     onPartyClick,
     onMouseEnter,
     onMouseLeave,

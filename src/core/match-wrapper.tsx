@@ -15,7 +15,6 @@ function Match({
   bottomText,
   style = defaultStyle,
   matchComponent: MatchComponent,
-  onMatchClick,
   onPartyClick,
   ...rest
 }) {
@@ -116,7 +115,6 @@ function Match({
           <MatchComponent
             {...{
               match,
-              onMatchClick,
               onPartyClick,
               onMouseEnter,
               onMouseLeave,

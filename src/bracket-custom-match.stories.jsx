@@ -36,7 +36,6 @@ export function CustomMatchBracket() {
       )}
       matchComponent={({
         match,
-        onMatchClick,
         onPartyClick,
         onMouseEnter,
         onMouseLeave,
