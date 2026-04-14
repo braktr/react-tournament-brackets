@@ -3,7 +3,7 @@ const path = require('path');
 const packageJson = require('../package.json');
 const root = path.join(__dirname, '../');
 
-const scope = 'shenato';
+const scope = 'braktr';
 
 function main() {
   const updatedJson = { ...packageJson, name: `@${scope}/${packageJson.name}` };
