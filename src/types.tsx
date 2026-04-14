@@ -87,6 +87,13 @@ export type OptionsType = {
   wonBywalkOverText?: string;
 
   lostByNoShowText?: string;
+
+  /** Optional label used for the action link in the default match component. */
+  matchDetailsText?: string;
+
+  /** Optional inline style for the action link in the default match component. */
+  matchDetailsStyle?: React.CSSProperties;
+
 };
 
 export type ComputedOptionsType = OptionsType & {
@@ -135,6 +142,12 @@ export type MatchComponentProps = {
   topText: string;
 
   bottomText: string;
+
+  /** Optional label used for the action link in the default match component. */
+  matchDetailsText?: string;
+
+  /** Optional inline style for the action link in the default match component. */
+  matchDetailsStyle?: React.CSSProperties;
 
   connectorColor?: string;
 
@@ -204,12 +217,6 @@ export type BracketLeaderboardProps = CommonTreeProps & {
   matchComponent: (props: MatchComponentProps) => JSX.Element;
 
   currentRound?: string;
-
-  onMatchClick?: (args: {
-    match: MatchType;
-    topWon: boolean;
-    bottomWon: boolean;
-  }) => void;
 
   onPartyClick?: (party: ParticipantType, partyWon: boolean) => void;
 };

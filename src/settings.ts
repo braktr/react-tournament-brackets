@@ -26,6 +26,7 @@ export const defaultStyle: OptionsType = {
   horizontalOffset: 13,
   wonBywalkOverText: 'WO',
   lostByNoShowText: 'NS',
+  matchDetailsText: "Match Details"
 };
 
 export const getCalculatedStyles = (

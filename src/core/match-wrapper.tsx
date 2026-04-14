@@ -110,7 +110,6 @@ function Match({
       {...rest}
     >
       <foreignObject x={0} y={0} width={width} height={boxHeight}>
-        {/* TODO: Add OnClick Match handler */}
         {MatchComponent && (
           <MatchComponent
             {...{
@@ -128,6 +127,8 @@ function Match({
               bottomText,
               connectorColor,
               computedStyles,
+              matchDetailsText: style.matchDetailsText,
+              matchDetailsStyle: style.matchDetailsStyle
             }}
           />
         )}

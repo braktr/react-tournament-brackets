@@ -24,7 +24,10 @@ function Match({
   topParty,
   topText,
   topWon,
+  matchDetailsText,
+  matchDetailsStyle
 }: MatchComponentProps) {
+
   return (
     <Wrapper>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -32,6 +35,8 @@ function Match({
         {(match.href || typeof match.onMatchClick === 'function') && (
           <Anchor
             href={match.href}
+            style={matchDetailsStyle}
+            aria-label={matchDetailsText}
             onClick={event => {
               event.stopPropagation();
               match.onMatchClick?.({ match, topWon, bottomWon, event });
@@ -46,7 +51,7 @@ function Match({
               event.stopPropagation()
             }
           >
-            <TopText>Match Details</TopText>
+            {matchDetailsText || "Match Details"}
           </Anchor>
         )}
       </div>

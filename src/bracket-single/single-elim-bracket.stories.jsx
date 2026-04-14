@@ -47,6 +47,15 @@ export const Bracket = Template.bind({});
 Bracket.args = {
   matches: simpleBracket,
   matchComponent: Match,
+  options: {
+    style: {
+      matchDetailsText: "KAPPA",
+      matchDetailsStyle: {
+        backgroundColor: "#BCBCBC",
+        color: "#000"
+      }
+    }
+  }
 };
 export const SmallBracket = Template.bind({});
 SmallBracket.args = {
