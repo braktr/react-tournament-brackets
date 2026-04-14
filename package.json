@@ -1,6 +1,6 @@
 {
-  "name": "react-tournament-brackets",
-  "version": "1.0.35",
+  "name": "@braktr/react-tournament-brackets",
+  "version": "1.0.36",
   "description": "A react component to visualize bracket leaderboards",
   "module": "dist/esm/index.js",
   "main": "dist/cjs/index.js",
@@ -8,6 +8,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build-cjs": "tsc -p ./tsconfig.node.json && tsc-alias -p ./tsconfig.node.json",
     "build-esm": "tsc -p ./tsconfig.browser.json && tsc-alias -p ./tsconfig.browser.json",
@@ -22,7 +25,7 @@
     "format": "eslint --fix \"src/**/*.jsx\" \"src/**/*.ts\" \"src/**/*.tsx\"",
     "prepublishGit": "node ./scripts/publishGit.js"
   },
-  "author": "Omar ElGaml",
+  "author": "Braktr",
   "license": "ISC",
   "peerDependencies": {
     "react": "^18.1.0",
